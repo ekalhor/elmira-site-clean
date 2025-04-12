@@ -30,7 +30,7 @@ export default function HomePage() {
         {/* Photo */}
         <div className="md:w-1/2 flex justify-center">
           <Image
-            src="/IMG_1032.jpg"
+            src="/IMG_1032.JPG"
             alt="Elmira Kalhor"
             width={300}
             height={300}
