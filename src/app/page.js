@@ -7,8 +7,19 @@ const quattrocento = Quattrocento({ subsets: ['latin'], weight: '400', variable:
 
 export default function HomePage() {
   return (
-    <main className={`min-h-screen flex items-center justify-center bg-white px-6 py-12 ${quattrocento.variable}`}>
-      <section className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+    <main className={`min-h-screen bg-white text-zinc-800 ${quattrocento.variable}`}>
+      
+      {/* Top Navigation */}
+      <nav className="w-full px-8 py-6 flex justify-between items-center shadow-sm border-b">
+        <Link href="/" className="text-xl font-semibold">Elmira Kalhor</Link>
+        <div className="space-x-6 text-sm font-medium text-gray-700">
+          <Link href="#portfolio" className="hover:text-blue-600">Portfolio</Link>
+          <Link href="#blog" className="hover:text-blue-600">Blog</Link>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-6 py-16 max-w-6xl mx-auto">
         {/* Text section */}
         <div className="text-left md:w-1/2" style={{ fontFamily: 'var(--font-quattrocento)' }}>
           <span className="inline-block px-4 py-1 mb-4 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
