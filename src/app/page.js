@@ -7,16 +7,20 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export default function HomePage() {
   return (
-    <main className={`min-h-screen flex flex-col items-center bg-white px-6 py-12 ${inter.variable}`} style={{ fontFamily: 'var(--font-inter)' }}>
-
+    <main
+      className={`min-h-screen flex flex-col items-center bg-white px-6 py-12 ${inter.variable}`}
+      style={{ fontFamily: 'var(--font-inter)' }}
+    >
       {/* Top Right Navigation */}
       <div className="w-full flex justify-end mt-6 pr-6 text-sm">
-        <Link href="/portfolio">
-			<span className="text-blue-800 hover:underline inline-block mr-4">Portfolio</span>
-        </Link>
-        <Link href="/blog">
-			<span className="text-blue-800 hover:underline inline-block">Blog</span>
-        </Link>
+        <div className="flex">
+          <Link href="/portfolio">
+            <p className="text-blue-800 hover:underline px-3">Portfolio</p>
+          </Link>
+          <Link href="/blog">
+            <p className="text-blue-800 hover:underline px-3">Blog</p>
+          </Link>
+        </div>
       </div>
 
       {/* Main Section */}
