@@ -28,7 +28,7 @@ export default function HomePage() {
       </div>
 
       {/* Photo - Centered under nav */}
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 px-6 md:px-12">
         <Image
           src="/IMG_1032.JPG"
           alt="Elmira Kalhor"
@@ -39,8 +39,8 @@ export default function HomePage() {
         />
       </div>
 
-      {/* Greeting Text - Left aligned */}
-      <div className="w-full max-w-3xl mt-10 text-left">
+      {/* Greeting Text - Left aligned, padded */}
+      <div className="w-full max-w-3xl mt-10 text-left px-6 md:px-12">
         <span className="inline-block px-4 py-1 mb-4 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
           It's me
         </span>
