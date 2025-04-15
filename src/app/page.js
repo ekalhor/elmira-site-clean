@@ -13,12 +13,12 @@ export default function HomePage() {
     >
       {/* Top Right Navigation */}
       <div className="w-full flex justify-end mt-6 pr-6 text-sm">
-        <div className="flex">
+        <div className="flex items-center">
           <Link href="/portfolio">
-            <p className="text-blue-800 hover:underline px-3">Portfolio</p>
+            <span className="text-blue-800 hover:underline mr-6 block">Portfolio</span>
           </Link>
           <Link href="/blog">
-            <p className="text-blue-800 hover:underline px-3">Blog</p>
+            <span className="text-blue-800 hover:underline block">Blog</span>
           </Link>
         </div>
       </div>
