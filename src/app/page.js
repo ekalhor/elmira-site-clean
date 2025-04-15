@@ -11,8 +11,12 @@ export default function HomePage() {
 
       {/* Top Right Links */}
       <div className="w-full flex justify-end space-x-6 mt-4 pr-6 text-sm">
-        <Link href="/portfolio">Portfolio</Link>
-        <Link href="/blog">Blog</Link>
+		<a href="#portfolio" className="mr-6 text-blue-800 hover:underline">
+			Portfolio
+		</a>
+		<a href="#blog" className="text-blue-800 hover:underline">
+			Blog
+		</a>
       </div>
 
       {/* Main Section */}
