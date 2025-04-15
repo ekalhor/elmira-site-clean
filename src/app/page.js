@@ -10,15 +10,14 @@ export default function HomePage() {
     <main className={`min-h-screen flex flex-col items-center bg-white px-6 py-12 ${inter.variable}`} style={{ fontFamily: 'var(--font-inter)' }}>
 
       {/* Top Right Links */}
-      <div className="w-full flex justify-end space-x-6 mt-4 pr-6 text-sm">
-		<a href="#portfolio" className="mr-6 text-blue-800 hover:underline">
+		<div className="w-full flex justify-end mt-6 pr-6 text-sm space-x-6">
+		  <Link href="/#portfolio" className="text-blue-800 hover:underline">
 			Portfolio
-		</a>
-		<a href="#blog" className="text-blue-800 hover:underline">
+		  </Link>
+		  <Link href="/#blog" className="text-blue-800 hover:underline">
 			Blog
-		</a>
-      </div>
-
+		  </Link>
+		</div>
       {/* Main Section */}
       <section className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-8">
         {/* Text block */}
