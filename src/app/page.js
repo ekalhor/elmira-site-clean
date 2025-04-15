@@ -10,8 +10,8 @@ export default function HomePage() {
     <main className={`min-h-screen flex flex-col items-center bg-white px-6 py-12 ${inter.variable}`} style={{ fontFamily: 'var(--font-inter)' }}>
 
       {/* Top Right Navigation */}
-      <div className="w-full flex justify-end gap-6 mt-6 pr-6 text-sm">
-        <Link href="/portfolio" className="text-blue-800 hover:underline">
+      <div className="w-full flex justify-end mt-6 pr-6 text-sm">
+        <Link href="/portfolio" className="text-blue-800 hover:underline mr-6">
           Portfolio
         </Link>
         <Link href="/blog" className="text-blue-800 hover:underline">
