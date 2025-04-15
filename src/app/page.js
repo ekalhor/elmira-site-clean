@@ -12,15 +12,13 @@ export default function HomePage() {
       style={{ fontFamily: 'var(--font-inter)' }}
     >
       {/* Top Right Navigation */}
-      <div className="w-full flex justify-end mt-6 pr-6 text-sm">
-        <div className="flex items-center">
-          <Link href="/portfolio">
-            <span className="text-blue-800 hover:underline mr-6 block">Portfolio</span>
-          </Link>
-          <Link href="/blog">
-            <span className="text-blue-800 hover:underline block">Blog</span>
-          </Link>
-        </div>
+      <div className="w-full text-sm mt-6 pr-6 text-right">
+        <Link href="/portfolio" legacyBehavior>
+          <a className="text-blue-800 hover:underline mr-6">Portfolio</a>
+        </Link>
+        <Link href="/blog" legacyBehavior>
+          <a className="text-blue-800 hover:underline">Blog</a>
+        </Link>
       </div>
 
       {/* Main Section */}
