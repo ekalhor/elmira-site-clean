@@ -10,7 +10,7 @@ export default function HomePage() {
     <main className={`min-h-screen flex flex-col items-center bg-white px-6 py-12 ${inter.variable}`} style={{ fontFamily: 'var(--font-inter)' }}>
 
       {/* Top Right Links */}
-      <div className="w-full flex justify-end gap-6 mt-4 pr-6 text-sm">
+      <div className="w-full flex justify-end space-x-6 mt-4 pr-6 text-sm">
         <Link href="/portfolio">Portfolio</Link>
         <Link href="/blog">Blog</Link>
       </div>
