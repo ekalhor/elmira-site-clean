@@ -1,27 +1,24 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Quattrocento } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-const quattrocento = Quattrocento({ subsets: ['latin'], weight: '400', variable: '--font-quattrocento' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export default function HomePage() {
   return (
-    <main className={`min-h-screen bg-white text-zinc-800 ${quattrocento.variable}`}>
-      
-      {/* Top Navigation */}
-      <nav className="w-full px-8 py-6 flex justify-between items-center shadow-sm border-b">
-        <Link href="/" className="text-xl font-semibold">Elmira Kalhor</Link>
-        <div className="space-x-6 text-sm font-medium text-gray-700">
-          <Link href="#portfolio" className="hover:text-blue-600">Portfolio</Link>
-          <Link href="#blog" className="hover:text-blue-600">Blog</Link>
-        </div>
-      </nav>
+    <main className={`min-h-screen flex flex-col items-center bg-white px-6 py-12 ${inter.variable}`} style={{ fontFamily: 'var(--font-inter)' }}>
 
-      {/* Hero Section */}
-      <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-6 py-16 max-w-6xl mx-auto">
-        {/* Text section */}
-        <div className="text-left md:w-1/2" style={{ fontFamily: 'var(--font-quattrocento)' }}>
+      {/* Top Right Links */}
+      <div className="w-full flex justify-end gap-6 mt-4 pr-6 text-sm">
+        <Link href="/portfolio">Portfolio</Link>
+        <Link href="/blog">Blog</Link>
+      </div>
+
+      {/* Main Section */}
+      <section className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-8">
+        {/* Text block */}
+        <div className="text-left md:w-1/2">
           <span className="inline-block px-4 py-1 mb-4 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
             It's me
           </span>
@@ -38,7 +35,7 @@ export default function HomePage() {
           </Link>
         </div>
 
-        {/* Photo */}
+        {/* Photo block */}
         <div className="md:w-1/2 flex justify-center">
           <Image
             src="/IMG_1032.JPG"
