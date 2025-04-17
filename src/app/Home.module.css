@@ -23,16 +23,24 @@
   margin-bottom: 2rem;
 }
 
-.photoFrame {
-  border-radius: 50%;
+.photoRing {
+  background: linear-gradient(
+    #e1d2f4 0%,
+    #e1d2f4 32%,
+    #f5eaff 32%,
+    #f5eaff 65%,
+    #ffffff 65%,
+    #ffffff 100%
+  );
   padding: 12px;
-  background: 
-    radial-gradient(circle, #ffffff 100px, #f5eaff 120px, #e1d2f4 140px);
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .photo {
-  border-radius: 9999px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 .textSection {
@@ -40,14 +48,27 @@
 }
 
 .greetingBubble {
-  background-color: #ffffff;
-  border: 2px solid #f5eaff;
-  border-radius: 1.5rem;
-  padding: 0.5rem 1.25rem;
-  display: inline-block;
+  background-color: #ff69b4; /* hot pink */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.5rem 1.5rem 1.5rem 0.3rem;
   font-size: 0.95rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: inline-block;
+  position: relative;
   margin-bottom: 0.5rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.greetingBubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ff69b4;
+  border-left: 10px solid transparent;
 }
 
 .navButton {
