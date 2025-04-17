@@ -21,18 +21,23 @@ export default function HomePage() {
         </div>
 
         {/* Photo */}
-        <div className={styles.photoWrapper}>
-			<div className={styles.photoRing}>
-			  <Image
-				src="/headshot.jpg"
-				alt="Elmira Kalhor"
-				width={300}
-				height={300}
-				className={styles.photo}
-				priority
-			  />
+		<div className={styles.photoWrapper}>
+		  <div className={styles.ringOuter}>
+			<div className={styles.ringMiddle}>
+			  <div className={styles.ringInner}>
+				<Image
+				  src="/headshot.jpg"
+				  alt="Elmira Kalhor"
+				  width={300}
+				  height={300}
+				  className={styles.photo}
+				  priority
+				/>
+			  </div>
 			</div>
-        </div>
+		  </div>
+		</div>
+	
 
         {/* Text */}
         <div className={styles.textSection}>

@@ -23,25 +23,34 @@
   margin-bottom: 2rem;
 }
 
-.photoRing {
-  background: linear-gradient(
-    #e1d2f4 0%,
-    #e1d2f4 32%,
-    #f5eaff 32%,
-    #f5eaff 65%,
-    #ffffff 65%,
-    #ffffff 100%
-  );
+/* Outer ring - darkest */
+.ringOuter {
   padding: 12px;
+  background-color: #e1d2f4; /* dark pastel purple */
   border-radius: 50%;
-  display: inline-block;
 }
 
+/* Middle ring - pastel */
+.ringMiddle {
+  padding: 12px;
+  background-color: #f5eaff; /* light pastel purple */
+  border-radius: 50%;
+}
+
+/* Inner ring - white */
+.ringInner {
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/* Actual photo */
 .photo {
+  display: block;
   border-radius: 50%;
   object-fit: cover;
-  display: block;
 }
+
 
 .textSection {
   text-align: left;
