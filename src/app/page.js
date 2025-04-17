@@ -12,8 +12,8 @@ export default function HomePage() {
       <div className={styles.container}>
         {/* Navigation */}
         <div className={styles.nav}>
-          <Link href="/portfolio"><button>Portfolio</button></Link>
-          <Link href="/blog"><button>Blog</button></Link>
+          <button className={styles.navButton}>Portfolio</button>
+          <button className={styles.navButton}>Blog</button>
         </div>
 
         {/* Photo */}
@@ -30,7 +30,7 @@ export default function HomePage() {
 
         {/* Text */}
         <div className={styles.textSection}>
-          <span className={styles.badge}>It's me</span>
+          <div className={styles.greetingBubble}>Hi, it's me!</div>
           <h1 className={styles.title}>Elmira Kalhor</h1>
           <p className={styles.subtitle}>
             Quantitative researcher with a passion for data science and machine learning.
