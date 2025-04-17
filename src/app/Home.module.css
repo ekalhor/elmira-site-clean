@@ -1,83 +1,71 @@
-.main {
-  min-height: 100vh;
-  padding: 3rem 1.5rem;
-  background-color: #f5eaff; /* light pastel purple */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: system-ui, sans-serif;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-.navbar {
-  width: 100%;
-  max-width: 1100px;
+.main {
+  background-color: #f6edff; /* pastel purple */
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+.nav {
   display: flex;
   justify-content: flex-end;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.navlink {
-  color: #1e40af;
-  text-decoration: none;
-  font-size: 0.875rem;
-}
-
-.navlink:hover {
-  text-decoration: underline;
-}
-
 .photoWrapper {
-  margin: 0 auto;
-  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .photo {
   border-radius: 9999px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.content {
-  width: 100%;
-  max-width: 700px;
-  margin-top: 2.5rem;
+.textSection {
   text-align: left;
-  padding: 0 3rem;
 }
 
-.tag {
+.badge {
   display: inline-block;
-  background-color: #dbeafe;
-  color: #1e40af;
-  padding: 0.25rem 1rem;
+  background: #cbd5ff;
+  padding: 0.4rem 0.8rem;
   border-radius: 9999px;
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 0.8rem;
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #0f172a;
+  color: #1a1a1a;
   margin-bottom: 1rem;
 }
 
 .subtitle {
-  font-size: 1.125rem;
-  color: #334155;
+  font-size: 1.2rem;
+  color: #4b5563;
   margin-bottom: 1.5rem;
 }
 
 .resumeButton {
-  background-color: #2563eb;
-  color: white;
   padding: 0.75rem 1.5rem;
+  background-color: #6366f1;
+  color: white;
+  border: none;
   border-radius: 0.5rem;
-  text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .resumeButton:hover {
-  background-color: #1d4ed8;
+  background-color: #4f46e5;
 }
