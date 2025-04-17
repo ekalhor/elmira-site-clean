@@ -8,7 +8,7 @@ export default function HomePage() {
     <main className={styles.main}>
       <div className={styles.container}>
 
-        {/* Top navigation */}
+        {/* Navigation */}
         <div className={styles.navbar}>
           <Link href="/portfolio">
             <button className={styles.navButton}>Portfolio</button>
@@ -18,7 +18,7 @@ export default function HomePage() {
           </Link>
         </div>
 
-        {/* Profile photo with triple ring */}
+        {/* Headshot with 3-ring border */}
         <div className={styles.photoWrapper}>
           <div className={styles.ringOuter}>
             <div className={styles.ringMiddle}>
@@ -36,10 +36,22 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Greeting and content */}
+        {/* Greeting + name + social icons */}
         <div className={styles.content}>
           <div className={styles.greetingBubble}>Hi, it's me!</div>
-          <h1 className={styles.title}>Elmira Kalhor</h1>
+
+          <div className={styles.nameRow}>
+            <h1 className={styles.title}>Elmira Kalhor</h1>
+            <div className={styles.iconLinks}>
+              <Link href="https://www.linkedin.com/in/elmira-kalhor" target="_blank" aria-label="LinkedIn">
+                <img src="/linkedin.svg" alt="LinkedIn" className={styles.icon} />
+              </Link>
+              <Link href="https://github.com/ekalhor" target="_blank" aria-label="GitHub">
+                <img src="/github.svg" alt="GitHub" className={styles.icon} />
+              </Link>
+            </div>
+          </div>
+
           <p className={styles.subtitle}>
             Quantitative researcher with a passion for data science and machine learning.
           </p>
@@ -47,18 +59,7 @@ export default function HomePage() {
           <Link href="/ElmiraKalhor_R.pdf" target="_blank">
             <button className={styles.resumeButton}>My Resume</button>
           </Link>
-
-          {/* Social buttons */}
-          <div className={styles.socialButtons}>
-            <Link href="https://www.linkedin.com/in/elmira-kalhor" target="_blank">
-              <button className={styles.socialButton}>LinkedIn</button>
-            </Link>
-            <Link href="https://github.com/ekalhor" target="_blank">
-              <button className={styles.socialButton}>GitHub</button>
-            </Link>
-          </div>
         </div>
-
       </div>
     </main>
   );
