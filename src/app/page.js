@@ -12,8 +12,12 @@ export default function HomePage() {
       <div className={styles.container}>
         {/* Navigation */}
         <div className={styles.nav}>
-          <button className={styles.navButton}>Portfolio</button>
-          <button className={styles.navButton}>Blog</button>
+          <Link href="/portfolio">
+			<button className={styles.navButton}>Portfolio</button>
+		  </Link>
+		  <Link href="/blog">
+			<button className={styles.navButton}>Blog</button>
+		  </Link>
         </div>
 
         {/* Photo */}
