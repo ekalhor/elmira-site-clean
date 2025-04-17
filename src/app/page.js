@@ -1,61 +1,42 @@
-'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+import styles from './Home.module.css';
 
 export default function HomePage() {
   return (
-    <main className={`min-h-screen bg-white ${inter.variable}`} style={{ fontFamily: 'var(--font-inter)' }}>
-      <div className="max-w-5xl mx-auto px-6 py-12 flex flex-col items-center">
+    <main className={styles.main}>
+      {/* Top Right Navigation */}
+      <div className={styles.navbar}>
+        <Link href="/portfolio" className={styles.navlink}>Portfolio</Link>
+        <Link href="/blog" className={styles.navlink}>Blog</Link>
+      </div>
 
-        {/* Top Right Navigation */}
-        <div className="w-full flex justify-end text-sm mb-4">
-          <div className="flex gap-4">
-            <Link href="/portfolio">
-              <button className="px-4 py-1 text-sm text-blue-800 hover:underline border border-transparent">
-                Portfolio
-              </button>
-            </Link>
-            <Link href="/blog">
-              <button className="px-4 py-1 text-sm text-blue-800 hover:underline border border-transparent">
-                Blog
-              </button>
-            </Link>
-          </div>
-        </div>
+      {/* Photo */}
+      <div className={styles.photoWrapper}>
+        <Image
+          src="/IMG_1032.JPG"
+          alt="Elmira Kalhor"
+          width={300}
+          height={300}
+          className={styles.photo}
+          priority
+        />
+      </div>
 
-        {/* Photo - Centered under nav */}
-        <div className="flex justify-center mt-4">
-          <Image
-            src="/IMG_1032.JPG"
-            alt="Elmira Kalhor"
-            width={300}
-            height={300}
-            className="rounded-full object-cover shadow-xl"
-            priority
-          />
-        </div>
-
-        {/* Greeting Text - Left aligned inside padded container */}
-        <div className="w-full mt-10 text-left">
-          <span className="inline-block px-4 py-1 mb-4 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
-            It's me
-          </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-4">Elmira Kalhor</h1>
-          <p className="text-lg text-zinc-700 mb-6">
-            Quantitative researcher with a passion for data science and machine learning.
-          </p>
-          <Link
-            href="/ElmiraKalhor_R.pdf"
-            target="_blank"
-            className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-          >
-            My Resume
-          </Link>
-        </div>
-
+      {/* Greeting and Resume */}
+      <div className={styles.content}>
+        <span className={styles.tag}>It's me</span>
+        <h1 className={styles.title}>Elmira Kalhor</h1>
+        <p className={styles.subtitle}>
+          Quantitative researcher with a passion for data science and machine learning.
+        </p>
+        <Link
+          href="/ElmiraKalhor_R.pdf"
+          target="_blank"
+          className={styles.resumeButton}
+        >
+          My Resume
+        </Link>
       </div>
     </main>
   );
