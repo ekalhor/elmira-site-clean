@@ -19,7 +19,7 @@ export default function HomePage() {
         {/* Photo */}
         <div className={styles.photoWrapper}>
           <Image
-            src="/IMG_1032.JPG"
+            src="/headshot.JPG"
             alt="Elmira Kalhor"
             width={300}
             height={300}
