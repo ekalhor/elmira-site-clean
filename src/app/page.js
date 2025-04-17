@@ -44,10 +44,10 @@ export default function HomePage() {
             <h1 className={styles.title}>Elmira Kalhor</h1>
             <div className={styles.iconLinks}>
               <Link href="https://www.linkedin.com/in/elmira-kalhor" target="_blank" aria-label="LinkedIn">
-                <img src="/linkedin.svg" alt="LinkedIn" className={styles.icon} />
+                <img src="/linkedin-hotpink.svg" alt="LinkedIn" className={styles.icon} />
               </Link>
               <Link href="https://github.com/ekalhor" target="_blank" aria-label="GitHub">
-                <img src="/github.svg" alt="GitHub" className={styles.icon} />
+                <img src="/github-hotpink.svg" alt="GitHub" className={styles.icon} />
               </Link>
             </div>
           </div>
