@@ -13,7 +13,7 @@ export default function BlogPage() {
             <div className={styles.ringMiddle}>
               <div className={styles.ringInner}>
                 <Image
-                  src="/blog_AI.jpg"
+                  src="/Blog_AI.jpg"
                   alt="Blog Preview"
                   width={300}
                   height={300}
