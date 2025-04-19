@@ -38,7 +38,7 @@ export default function HomePage() {
 
         {/* Greeting + name + social icons */}
         <div className={styles.content}>
-          /*<div className={styles.greetingBubble}>Hi, it's me!</div>*/
+          
 
           <div className={styles.nameRow}>
             <h1 className={styles.title}>Elmira Kalhor</h1>
